@@ -1,3 +1,3 @@
 """System module."""
 
-print(7)
+print("6)
