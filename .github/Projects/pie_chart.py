@@ -1,6 +1,7 @@
 """System module."""
 
 def pie_chart(degree):
+    """Function for generating pie chart percentage."""
     print(f"The Pie chart percentage is: {360 / value * degree}")
 
 
