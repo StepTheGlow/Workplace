@@ -1,8 +1,7 @@
 """System module."""
 
-pika = 1
-count = 1
-if pika <= 100:
-  print(count)
-  pika += 1
-  count += 1
+def pie_chart(degree):
+  print(f"The Pie chart percentage is: {360 * value / degree}")
+
+value = 240
+pie_chart(99)
