@@ -5,3 +5,4 @@ def pie_chart(degree):
 
 value = 240
 pie_chart(99)
+pie_chart(20)
