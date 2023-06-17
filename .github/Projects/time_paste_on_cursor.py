@@ -27,5 +27,6 @@ def type_and_paste(sentence, interval):
 SENTENCE_TO_TYPE = "Hello, World!"
 TYPING_INTERVAL = 2  # seconds
 
-type_and_paste(SENTENCE_TO_TYPE, TYPING_INTERVAL)
+if __name__ == "__main__":
+    type_and_paste(SENTENCE_TO_TYPE, TYPING_INTERVAL)
     
