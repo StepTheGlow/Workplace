@@ -1,5 +1,6 @@
 """
-A script that automatically types a certain sentence and pastes it at the cursor position every 2 seconds.
+A script that automatically types a certain sentence 
+and pastes it at the cursor position every 2 seconds.
 Requires the 'pyautogui' library to be installed.
 """
 
