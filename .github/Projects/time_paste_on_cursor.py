@@ -29,4 +29,3 @@ TYPING_INTERVAL = 2  # seconds
 
 if __name__ == "__main__":
     type_and_paste(SENTENCE_TO_TYPE, TYPING_INTERVAL)
-    
