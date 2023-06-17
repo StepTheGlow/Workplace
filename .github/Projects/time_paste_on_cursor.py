@@ -1,23 +1,20 @@
-import pyautogui
 import time
+import pyautogui
 
-def type_and_paste(sentence):
-    # Wait for a few seconds to switch to the desired window or text field
-    time.sleep(2)
+def type_and_paste(sentence, interval):
+    time.sleep(2)  # Wait for 2 seconds before starting
 
-    # Type the sentence
-    pyautogui.typewrite(sentence)
+    while True:
+        current_pos = pyautogui.position()  # Get the current cursor position
+        pyautogui.typewrite(sentence)  # Type the sentence
+        pyautogui.hotkey('ctrl', 'v')  # Paste the sentence at the cursor position
+        pyautogui.press('enter')  # Press Enter to simulate submitting the sentence
+        pyautogui.moveTo(current_pos)  # Move the cursor back to its original position
+        time.sleep(interval)  # Wait for the specified interval before typing again
 
-    # Copy the typed sentence
-    pyautogui.hotkey("c", "c")
-
-    # Move the cursor to the desired location
-    pyautogui.click()
-
-    # Paste the copied text
-    pyautogui.hotkey("c", "p")
-
-# Example usage
+# Change the values below to customize the script
 sentence_to_type = "keo aso?"
-type_and_paste(sentence_to_type)
-  
+typing_interval = 2  # seconds
+
+type_and_paste(sentence_to_type, typing_interval)
+    
