@@ -1,4 +1,4 @@
-instaloader==2.7.1
+instaloader==4.9.6
 requests==2.25.1
 pyautogui==0.9.52
 
