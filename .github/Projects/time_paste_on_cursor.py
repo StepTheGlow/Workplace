@@ -1,9 +1,15 @@
+"""
+A script that automatically types a certain sentence
+and pastes it at the cursor position every 2 seconds.
+Requires the 'pyautogui' library to be installed.
+"""
+
 import time
 import pyautogui
 
 def type_and_paste(sentence, interval):
     """
-    Automatically types a sentence and pastes it at the cursor position.
+    Function to type a sentence and paste it at the cursor position.
     Args:
         sentence (str): The sentence to be typed and pasted.
         interval (int): Time interval in seconds between each typing action.
@@ -28,4 +34,4 @@ TYPING_INTERVAL = 2  # seconds
 
 if __name__ == "__main__":
     type_and_paste(SENTENCE_TO_TYPE, TYPING_INTERVAL)
-    
+        
