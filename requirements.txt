@@ -3,3 +3,4 @@ requests==2.25.1
 pyautogui==0.9.52
 pygame
 sys
+kivy
